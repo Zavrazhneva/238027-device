@@ -8,30 +8,66 @@
 	<header>
 		<div class="container">
 			<div class="header-left-block">
-				<span>Device</span>
-				<div>
-					<img src="http://placehold.it/30x30" alt="Поиск">
-					<input type="text" name="search">
+				<div class="logo">
+					<a href="">Device</a>
 				</div>
 				<div>
-					<a href="">Каталог товаров</a>
+					<form class="search" action="/" method="get">
+						<img src="http://placehold.it/30x30" width="30" height="30" alt="Поиск">
+						<input type="text" name="search">
+					</form>
+				</div>
+				<div>
+					<span>Каталог товаров</span>
+					<div class="header-catalog">
+						<div class="col-1">
+							<ul>
+								<li>
+									<a href="">Виртуальная реальность</a>
+								</li>
+								<li>
+									<a href="">Моноподы для селфи</a>
+								</li>
+								<li>
+									<a href="">Экшн-камеры</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-2">
+							<ul>
+								<li>
+									<a href="">Фитнес-браслеты</a>
+								</li>
+								<li>
+									<a href="">Умные часы</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-3">
+							<ul>
+								<li>
+								<a href="">Квадрокоптеры</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>	
 			<div class="header-right-block">
-				<div class="">
+				<div class="user-block">
 					<a href="">
-						<img src="http://placehold.it/30x30" alt="имя">
+						<span></span>
 						Валентин Петухов
 					</a>
 					<a href="">Выйти</a>
 				</div>
 				<div>	
 					<a href="">
-						<img src="http://placehold.it/30x30" alt="Сравнить">
+						<span></span>
 						Сравнить
 					</a>
 					<a href="">
-						<img src="http://placehold.it/30x30" alt="Корзина">
+						<span></span>
 						Корзина
 					</a>
 				</div>
@@ -44,35 +80,54 @@
 		</div>	
 	</header>
 	<main class="container">
-		<h1>Моноподы для селфи</h1>
-		<form>
-			<span>Фильтр</span>
-			<fieldset class="fieldset">
-				<legend>Стоимость</legend>
-				<input type="range" name="price">
-			</fieldset>
-			<fieldset class="fieldset">
-				<legend>Цвет</legend>
-				<input id="black" type="checkbox" name="black" checked="">
-				<label for="black">Черный</label>
-				<input id="white" type="checkbox" name="white">
-				<label for="white">Белый</label>
-				<input id="blue" type="checkbox" name="blue" checked="">
-				<label for="blue">Синий</label>
-				<input id="red" type="checkbox" name="red" checked="">
-				<label for="red">Красный</label>
-				<input id="pink" type="checkbox" name="pink">
-				<label for="pink">Розовый</label>
-			</fieldset>
-			<fieldset class="fieldset">
-				<legend>Bluetooth</legend>
-				<input id="yes" type="radio" value="1" name="bluetooth">
-				<label for="yes">Есть</label>
-				<input id="no" type="radio" value="0" name="bluetooth">
-				<label for="no">Нет</label>
-			</fieldset>
-			<button>Показать</button>
-		</form>
+		<div class="container-top">
+			<h1>Моноподы для селфи</h1>
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="">Главная</a>
+					</li>
+					<li>
+						<a href="">Каталог товаров</a>
+					</li>
+					<li>
+						Моноподы для селфи
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="filter">
+			<form action="/" method="post">
+				<div class="fieldset-top">
+					Фильтр:
+				</div>
+				<fieldset class="fieldset">
+					<legend>Стоимость</legend>
+					<input type="range" name="price">
+				</fieldset>
+				<fieldset class="fieldset">
+					<legend>Цвет</legend>
+					<input id="black" type="checkbox" name="black" checked="">
+					<label for="black">Черный</label>
+					<input id="white" type="checkbox" name="white">
+					<label for="white">Белый</label>
+					<input id="blue" type="checkbox" name="blue" checked="">
+					<label for="blue">Синий</label>
+					<input id="red" type="checkbox" name="red" checked="">
+					<label for="red">Красный</label>
+					<input id="pink" type="checkbox" name="pink">
+					<label for="pink">Розовый</label>
+				</fieldset>
+				<fieldset class="fieldset">
+					<legend>Bluetooth</legend>
+					<input id="yes" type="radio" value="1" name="bluetooth">
+					<label for="yes">Есть</label>
+					<input id="no" type="radio" value="0" name="bluetooth">
+					<label for="no">Нет</label>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
+		</div>
 		<div class="catalog">
 			<div class="sorting">
 				<span>Сортировка</span>
@@ -88,39 +143,63 @@
 					</li>
 				</ul>
 				<a href="">
-					<img src="http://placehold.it/5x5" alt="вверх">
+					<span class="sort-up "></span>
 				</a>
 				<a href="">
-					<img src="http://placehold.it/5x5" alt="вниз">
+					<span class="sort-asc"></span>
 				</a>
 			</div>
 			<div class="product">
 				<article class="goods-card">
-					<img src="http://placehold.it/150x150" alt="Товар">
-					<h2>Любительская селфи-палка</h2>
+					<img src="http://placehold.it/150x150" width="150" height="150" alt="Товар">
+					<a href="">
+						<h2>Любительская селфи-палка</h2>
+					</a>
 					<span>500 руб.</span>
+					<div class="hover">
+						<a href="">В корзину</a>
+						<a href="">Добавить к сравнению</a>
+					</div>
 				</article>
 				<article class="goods-card">
-					<img src="http://placehold.it/150x150" alt="Товар">
-					<h2>Профессиональная селфи-палка</h2>
+					<img src="http://placehold.it/150x150" width="150" height="150" alt="Товар">
+					<a href="">
+						<h2>Профессиональная селфи-палка</h2>
+					</a>
 					<span>1500 руб.</span>
+					<div class="hover">
+						<a href="">В корзину</a>
+						<a href="">Добавить к сравнению</a>
+					</div>
 				</article>
 				<article class="goods-card">
-					<img src="http://placehold.it/150x150" alt="Товар">
-					<h2>Непотопляемая селфи-палка</h2>
+					<img src="http://placehold.it/150x150" width="150" height="150" alt="Товар">
+					<a href="">
+						<h2>Непотопляемая селфи-палка</h2>
+					</a>
 					<span>2500 руб.</span>
+					<div class="hover">
+						<a href="">В корзину</a>
+						<a href="">Добавить к сравнению</a>
+					</div>
 				</article>
 				<article class="goods-card">
-					<img src="http://placehold.it/150x150" alt="Товар">
-					<h2>Селфи-палка "Следуй за мной"</h2>
+					<img src="http://placehold.it/150x150" width="150" height="150" alt="Товар">
+					<a href="">
+						<h2>Селфи-палка "Следуй за мной"</h2>
+					</a>
 					<span>4900 руб.</span>
+					<div class="hover">
+						<a href="">В корзину</a>
+						<a href="">Добавить к сравнению</a>
+					</div>
 				</article>
 			</div>
 			<div class="pagination">
 				<div>
 					<a href="">Назад</a>
 				</div>
-				<div>
+				<div class="pages">
 					<a href="">1</a>
 					<a href="">2</a>
 					<a href="">3</a>
@@ -135,39 +214,52 @@
 		<div class="container">
 			<div class="address">
 				<span>Device</span>
-				<span>г. Москва, ул. Строителей, 15</span>
-				<div class="line"></div>
+				<p>г. Москва, ул. Строителей, 15</p>
 			</div>
 			<div class="footer-center-block">
 				<ul>
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Контакты</li>
+					<li>
+						<a href="">Доставка</a>
+					</li>
+					<li>
+						<a href="">Гарантия</a>
+					</li>
+					<li>
+						<a href="">Контакты</a>
+					</li>
 				</ul>
-				<div>
-					<img src="http://placehold.it/20x20" alt="фейсбук">
-					<img src="http://placehold.it/20x20" alt="интаграмм">
-					<img src="http://placehold.it/20x20" alt="твитер">
+				<div class="social">
+					<a href="">
+						<img src="http://placehold.it/20x20" width="20" height="20"  alt="фейсбук">
+					</a>
+					<a href="">
+						<img src="http://placehold.it/20x20" width="20" height="20" alt="интаграмм">
+					</a>
+					<a href="">
+						<img src="http://placehold.it/20x20" width="20" height="20" alt="твитер">
+					</a>
 				</div>
 			</div>	
 			<div class="footer-right-block">
 				<a href="">
-					<img src="http://placehold.it/10x10" alt="Войти">
+					<span></span>
 					Войти
 				</a>
 				<a href="">
-					<img src="http://placehold.it/10x10" alt="Сравнить">
+					<span></span>
 					Сравнить
 				</a>		
 				<a href="">
-					<img src="http://placehold.it/10x10" alt="Корзина">
+					<span></span>
 					Корзина
 				</a>
 				<div class="coll">
 					<span>Тел.+7(495)495-95-95</span>
 				</div>
 				<div>
-					<img src="http://placehold.it/20x20" alt="logo">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="http://placehold.it/20x20" width="20" height="20" alt="logo">
+					</a>
 				</div>
 			</div>
 		</div>	
