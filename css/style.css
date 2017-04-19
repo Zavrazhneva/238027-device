@@ -1,0 +1,20 @@
+body {
+	font-size: 15px;
+	line-height: 30px;
+	color:#474747;
+	font-weight: lighter;
+	font-family:Open Sans;
+}
+h1,
+h2 {
+	font-size: 47px;
+	color: #000000;
+	font-weight: bolder;
+	font-family: Gilroy;
+}
+.catalog-popular a {
+
+}
+footer {
+	background-color: #474747;
+}
