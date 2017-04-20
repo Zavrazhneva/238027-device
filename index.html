@@ -14,7 +14,7 @@
             </div>
             <div>
                 <form class="search" action="/" method="get">
-                    <input type="submit">
+                    <batton type="submit"></batton>
                     <input placeholder="Поиск по сайту" type="text" name="search">
                 </form>
             </div>
@@ -77,6 +77,20 @@
     </div>
 </header>
 <div class="slider">
+    <ul>
+        <li class="сircle">
+            <label for="slide1"></label>
+            <input id="slide1" type="radio">
+        </li>
+        <li class="сircle">
+            <label for="slide2"></label>
+            <input id="slide2" type="radio">
+        </li>
+        <li class="сircle">
+            <label for="slide3"></label>
+            <input id="slide3" type="radio">
+        </li>
+    </ul>
     <div class="slider-var">
         <img src="img/slider/slider-1.png" width="150" height="200" alt="товар">
         <span>01</span>
@@ -86,20 +100,6 @@
                 Восемь(Восемь,Карл!) метров длиной и весом всего 5 килограмм.</p>
             <div>
                 <a href="">Подробнее</a>
-                <ul>
-                    <li class="сircle">
-                        <label for="slide1"></label>
-                        <input id="slide1" type="radio">
-                    </li>
-                    <li class="сircle">
-                        <label for="slide2"></label>
-                        <input id="slide2" type="radio">
-                    </li>
-                    <li class="сircle">
-                        <label for="slide3"></label>
-                        <input id="slide3" type="radio">
-                    </li>
-                </ul>
             </div>
             <ul class="data-slider">
                 <li>
@@ -161,38 +161,38 @@
     <li class="catalog-popular">
         <a href="">
             <img src="img/icon/popular-1.png" width="" height="" alt="очки">
-            Виртуальная реальность
+            <span class="catalog-popular__title">Виртуальная реальность</span>
         </a>
     </li>
     <li class="catalog-popular">
         <a href="">
             <img src="img/icon/popular-2.png" width="" height="" alt="Моноподы">
-            Моноподы для селфи
+            <span class="catalog-popular__title">Моноподы для селфи</span>
         </a>
     </li>
     <li class="catalog-popular">
         <a href="">
             <img src="img/icon/popular-3.png" width="" height="" alt="камеры">
-            Экшн-камеры
+            <span class="catalog-popular__title">Экшн-камеры</span>
         </a>
     </li>
     <li class="catalog-popular">
         <a href="">
             <img src="img/icon/popular-4.png" width="" height="" alt="Браслеты">
-            Фитнес браслеты
+            <span class="catalog-popular__title">Фитнес браслеты</span>
         </a>
 
     </li>
     <li class="catalog-popular">
         <a href="">
             <img src="img/icon/popular-5.png" width="" height="" alt="Часы">
-            Умные часы
+            <span class="catalog-popular__title">Умные часы</span>
         </a>
     </li>
     <li class="catalog-popular">
         <a href="">
             <img src="img/icon/popular-6.png" width="" height="" alt="Квадрокоптеры">
-            Квадрокоптеры
+            <span class="catalog-popular__title">Квадрокоптеры</span>
         </a>
     </li>
 </ul>
@@ -328,7 +328,7 @@
 </footer>
 <div class="modal">
     <form action="" method="post" style="display: none;">
-        <input class="modal-close" type="submit" >
+        <input class="modal-close" type="submit">
         <label for="name">Ваше имя:</label>
         <input id="name" type="text" name="name" value="Представьтесь, пожалуйста">
         <label for="mail">Ваш e-mail:</label>
@@ -339,6 +339,10 @@
             <input type="submit" value="Отправить">
         </p>
     </form>
+</div>
+<div class="modal" style="display: none;">
+    <input class="modal-close" type="submit">
+    <img src="/img/map/map-big.jpg" alt="Карта">
 </div>
 </body>
 </html>
