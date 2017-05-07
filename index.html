@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:display="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -19,7 +19,7 @@
                 </form>
                 <div class="header__user-block">
                     <div class="header__user-block-lk">
-                        <a href="">
+                        <a class="header__user-block-link" href="">
                             Войти
                         </a>
                     </div>
@@ -89,21 +89,21 @@
 <div class="slider">
     <div class="container">
         <ul class="slider__circles">
-        <li class="сircle">
+        <li class="slider__circles-circle">
             <label for="slide1"></label>
             <input id="slide1" type="radio">
         </li>
-        <li class="сircle">
+        <li class="slider__circles-circle">
             <label for="slide2"></label>
             <input id="slide2" type="radio">
         </li>
-        <li class="сircle">
+        <li class="slider__circles-circle">
             <label for="slide3"></label>
             <input id="slide3" type="radio">
         </li>
     </ul>
         <div class="slider__slide">
-            <img class="slider__slide-img" src="images/slider/slider-1.png" width="" height="" alt="товар">
+            <img class="slider__slide-img" src="images/slider/slider-1.png" width="384" height="230" alt="товар">
             <span class="slider__slide-number">01</span>
             <div class="slider__slide-description">
                 <h1>Делай селфи,<br>
@@ -130,7 +130,7 @@
             </div>
         </div>
         <div class="slider__slide" style="display: none;">
-            <img class="slider__slide-img" src="images/slider/slider-2.png" width="" height="" alt="товар">
+            <img class="slider__slide-img" src="images/slider/slider-2.png" width="345" height="256" alt="товар">
             <span class="slider__slide-number">02</span>
             <div class="slider__slide-description">
                 <h1>Худеем правильно!</h1>
@@ -147,7 +147,7 @@
             </div>
         </div>
         <div class="slider__slide" style="display: none;">
-            <img class="slider__slide-img" src="images/slider/slider-3.png" width="" height="" alt="товар">
+            <img class="slider__slide-img" src="images/slider/slider-3.png" width="526" height="171" alt="товар">
             <span class="slider__slide-number">03</span>
             <div class="slider__slide-description">
                 <h1>Порхает как бабочка,жалит как пчела!</h1>
@@ -301,11 +301,13 @@
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России!
                 DEVICE работает со многими транспортными компаниями:</p>
-            <ul>
-                <li>Деловые линии</li>
-                <li>Автотрейдинг</li>
-                <li>ЖелдорЭкспедиция</li>
-            </ul>
+            <div class="company__list">
+                <ul>
+                    <li class="company__list-item">Деловые линии</li>
+                    <li class="company__list-item">Автотрейдинг</li>
+                    <li class="company__list-item">ЖелдорЭкспедиция</li>
+                </ul>
+            </div>
             <a href="">Подробнее о нас</a>
         </section>
         <section class="company__contact">
@@ -314,7 +316,7 @@
                 Заодно, вы сможете проверить работоспособность покупки.
                 Всякое бывает.</p>
             <a href="">
-                <img src="images/map/map.jpg" width="560" height="223" alt="Карта">
+                <img class="company__contact-map" src="images/map/map.jpg" width="560" height="223" alt="Карта">
             </a>
             <a href="">Напишите нам</a>
         </section>
@@ -380,20 +382,20 @@
     </div>
 </footer>
 
-<div class="modal">
+<div class="modal" style="display: none;">
     <form class="modal__form" action="" method="post">
         <div class="modal__form-close">
             <input type="submit">
         </div>
-        <div class="left">
+        <div class="modal__form-left">
             <label for="name">Ваше имя:</label>
             <input id="name" type="text" name="name" value="Представьтесь, пожалуйста">
         </div>
-        <div class="right">
+        <div class="modal__form-right">
             <label for="mail">Ваш e-mail:</label>
             <input id="mail" type="text" name="mail" value="Для отправки ответа">
         </div>
-        <div class="bottom">
+        <div class="modal__form-bottom">
             <label for="letter">Текст письма:</label>
             <textarea id="letter" rows="10" cols="45" name="text">В свободной форме</textarea>
         </div>
