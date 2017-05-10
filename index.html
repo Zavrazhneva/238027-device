@@ -13,9 +13,10 @@
                 <a href="/">Device</a>
             </div>
             <div class="header__top">
-                <form class="header__search" action="/" method="get">
-                    <button class="header__search-button" type="submit"></button>
-                    <input class="header__search-input" placeholder="Поиск по сайту" type="text" name="search">
+                <form class="header__search search" action="/" method="get">
+                    <span class="search__icon"></span>
+                    <input class="search__input" placeholder="Поиск по сайту" type="text" name="search">
+                    <button type="submit" class="search__button">Найти</button>
                 </form>
                 <div class="header__user-block">
                     <div class="header__user-block-lk">
@@ -38,7 +39,7 @@
                     <div class="header__catalog-title">
                         <span>Каталог товаров</span>
                         <div class="header__catalog-hidden">
-                            <div class="col-1">
+                            <div class="col">
                                 <ul>
                                     <li>
                                         <a href="">Виртуальная реальность</a>
@@ -51,7 +52,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-2">
+                            <div class="col">
                                 <ul>
                                     <li>
                                         <a href="">Фитнес-браслеты</a>
@@ -61,7 +62,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-3">
+                            <div class="col">
                                 <ul>
                                     <li>
                                         <a href="">Квадрокоптеры</a>
@@ -89,19 +90,19 @@
 <div class="slider">
     <div class="container">
         <ul class="slider__circles">
-        <li class="slider__circles-circle">
-            <label for="slide1"></label>
-            <input id="slide1" type="radio">
-        </li>
-        <li class="slider__circles-circle">
-            <label for="slide2"></label>
-            <input id="slide2" type="radio">
-        </li>
-        <li class="slider__circles-circle">
-            <label for="slide3"></label>
-            <input id="slide3" type="radio">
-        </li>
-    </ul>
+            <li class="slider__circles-circle">
+                <label for="slide1"></label>
+                <input id="slide1" type="radio">
+            </li>
+            <li class="slider__circles-circle">
+                <label for="slide2"></label>
+                <input id="slide2" type="radio">
+            </li>
+            <li class="slider__circles-circle">
+                <label for="slide3"></label>
+                <input id="slide3" type="radio">
+            </li>
+        </ul>
         <div class="slider__slide">
             <img class="slider__slide-img" src="images/slider/slider-1.png" width="384" height="230" alt="товар">
             <span class="slider__slide-number">01</span>
@@ -111,7 +112,7 @@
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь(Восемь,Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <div class="slider__slide-link colored-button">
-                    <a  href="">
+                    <a href="">
                         <span class="colored-button__text">
                             Подробнее
                         </span>
@@ -140,7 +141,7 @@
                 <h1>Худеем правильно!</h1>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <div class="slider__slide-link colored-button">
-                    <a  href="">
+                    <a href="">
                         <span class="colored-button__text">
                             Подробнее
                         </span>
@@ -162,7 +163,7 @@
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                     замаскированным под стандартную камеру.</p>
                 <div class="slider__slide-link colored-button">
-                    <a  href="">
+                    <a href="">
                         <span class="colored-button__text">
                             Подробнее
                         </span>
@@ -185,7 +186,7 @@
 <div class="popular container">
     <ul class="popular__menu">
         <li class="popular__menu-catalog">
-            <a style="display: block" href="">
+            <a href="">
                 <div class="popular__menu-catalog-image">
                     <img src="images/icon/popular-1.png" width="97" height="55" alt="очки">
                 </div>
@@ -195,7 +196,7 @@
         <li class="popular__menu-catalog">
             <a href="">
                 <div class="popular__menu-catalog-image">
-                    <img src="images/icon/popular-2.png" width="" height="" alt="Моноподы">
+                    <img src="images/icon/popular-2.png" width="86" height="117" alt="Моноподы">
                 </div>
                 <span class="popular__menu-catalog-title">Моноподы для селфи</span>
             </a>
@@ -203,7 +204,7 @@
         <li class="popular__menu-catalog">
             <a href="">
                 <div class="popular__menu-catalog-image">
-                    <img src="images/icon/popular-3.png" width="" height="" alt="камеры">
+                    <img src="images/icon/popular-3.png" width="71" height="87" alt="камеры">
                 </div>
                 <span class="popular__menu-catalog-title">Экшн-камеры</span>
             </a>
@@ -211,7 +212,7 @@
         <li class="popular__menu-catalog">
             <a href="">
                 <div class="popular__menu-catalog-image">
-                    <img src="images/icon/popular-4.png" width="" height="" alt="Браслеты">
+                    <img src="images/icon/popular-4.png" width="107" height="65" alt="Браслеты">
                 </div>
 
                 <span class="popular__menu-catalog-title">Фитнес-браслеты</span>
@@ -220,7 +221,7 @@
         <li class="popular__menu-catalog">
             <a href="">
                 <div class="popular__menu-catalog-image">
-                    <img src="images/icon/popular-5.png" width="" height="" alt="Часы">
+                    <img src="images/icon/popular-5.png" width="56" height="98" alt="Часы">
                 </div>
                 <span class="popular__menu-catalog-title">Умные часы</span>
             </a>
@@ -228,7 +229,7 @@
         <li class="popular__menu-catalog">
             <a href="">
                 <div class="popular__menu-catalog-image">
-                    <img src="images/icon/popular-6.png" width="" height="" alt="Квадрокоптеры">
+                    <img src="images/icon/popular-6.png" width="132" height="69" alt="Квадрокоптеры">
                 </div>
                 <span class="popular__menu-catalog-title">Квадрокоптеры</span>
             </a>
@@ -238,112 +239,132 @@
 <div class="about">
     <div class="container">
         <ul class="about__titles">
-            <li class="about__titles-item colored-button colored-button--active">
-                <a href="">Доставка</a>
+            <li class="about__tab">
+                <input name="tab" type="radio" id="tab1" checked>
+                <label class="about__titles-item  colored-button" for="tab1">
+                    <span class="colored-button__text">
+                        Доставка
+                    </span>
+                </label>
+                <section class=" about__tab-content about__servise-content">
+                    <div class="about__servise-content-img">
+                        <img src="images/services/delivery.png" width="136" height="164" alt="delivery">
+                    </div>
+                    <div class="about__servise-content-info">
+                        <h2>Доставка</h2>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    </div>
+                </section>
             </li>
-            <li class="about__titles-item colored-button">
-                <a href="">Гарантия</a>
+            <li class="about__tab">
+                <input name="tab" type="radio" id="tab2">
+                <label for="tab2" class="about__titles-item  colored-button">
+                    <span class="colored-button__text">
+                        Гарантия
+                    </span>
+                </label>
+                <section class="about__tab-content about__servise-content">
+                    <div class="about__servise-content-img">
+                        <img src="images/services/warranty.png" width="171" height="195" alt="delivery">
+                    </div>
+                    <div class="about__servise-content-info">
+                        <h2>Гарантия</h2>
+                        <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте,
+                            мы выдадим вам новый.Товар, не дом, конечно же.</p>
+                    </div>
+
+                </section>
             </li>
-            <li class="about__titles-item colored-button">
-                <a href="">Кредит</a>
+            <li class="about__tab">
+                <input name="tab" type="radio" id="tab3">
+                <label class="about__titles-item  colored-button" for="tab3">
+                    <span class="colored-button__text">
+                        Кредит
+                    </span>
+                </label>
+                <section class="about__tab-content about__servise-content">
+                    <div class="about__servise-content-img">
+                        <img src="images/services/credit.png" width="156" height="188" alt="delivery">
+                    </div>
+                    <div class="about__servise-content-info">
+                        <h2>Кредит</h2>
+                        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
+                            для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    </div>
+
+                </section>
             </li>
         </ul>
-        <div class="about__servise">
-            <section class="about__servise-content">
-                <div class="about__servise-content-img">
-                    <img src="images/services/delivery.png" width="" height="164" alt="delivery">
-                </div>
-                <div class="about__servise-content-info">
-                    <h2>Доставка</h2>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                        Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </div>
-
-            </section>
-            <section class="about__servise-content" style="display: none;">
-                <div class="about__servise-content-img">
-                    <img src="images/services/warranty.png" width="" height="" alt="delivery">
-                </div>
-                <div class="about__servise-content-info">
-                    <h2>Гарантия</h2>
-                    <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте,
-                        мы выдадим вам новый.Товар, не дом, конечно же.</p>
-                </div>
-
-            </section>
-            <section class="about__servise-content" style="display: none;">
-                <div class="about__servise-content-img">
-                    <img src="images/services/credit.png" width="" height="" alt="delivery">
-                </div>
-                <div class="about__servise-content-info">
-                    <h2>Кредит</h2>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
-                        для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                </div>
-
-            </section>
-        </div>
     </div>
 </div>
 <ul class="brand container clearfix">
-        <li class="brand__name">
-            <a href="">
-                <img src="images/logo/logo-1.png" width="260" height="100" alt="бренд">
-            </a>
-        </li>
-        <li class="brand__name">
-            <a href="">
-                <img src="images/logo/logo-2.png" width="260" height="100" alt="бренд">
-            </a>
-        </li>
-        <li class="brand__name">
-            <a href="">
-                <img src="images/logo/logo-3.png" width="260" height="100" alt="бренд">
-            </a>
-        </li>
-        <li class="brand__name">
-            <a href="">
-                <img src="images/logo/logo-4.png" width="260" height="100" alt="бренд">
-            </a>
-        </li>
+    <li class="brand__name">
+        <a href="">
+            <div class="brand__name-img brand__name-img--logo1">
+
+            </div>
+        </a>
+    </li>
+    <li class="brand__name">
+        <a href="">
+            <div class="brand__name-img brand__name-img--logo2">
+
+            </div>
+        </a>
+    </li>
+    <li class="brand__name">
+        <a href="">
+            <div class="brand__name-img brand__name-img--logo3">
+
+            </div>
+        </a>
+    </li>
+    <li class="brand__name">
+        <a href="">
+            <div class="brand__name-img brand__name-img--logo4">
+
+            </div>
+        </a>
+    </li>
 </ul>
 <div class="company container clearfix">
-        <section class="company__info">
-            <h2>О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-                DEVICE работает со многими транспортными компаниями:</p>
-            <div class="company__list">
-                <ul>
-                    <li class="company__list-item">Деловые линии</li>
-                    <li class="company__list-item">Автотрейдинг</li>
-                    <li class="company__list-item">ЖелдорЭкспедиция</li>
-                </ul>
-            </div>
-            <div class="company__list-more colored-button">
-                <a href="">
+    <section class="company__info">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+            DEVICE работает со многими транспортными компаниями:</p>
+        <div class="company__list">
+            <ul>
+                <li class="company__list-item">Деловые линии</li>
+                <li class="company__list-item">Автотрейдинг</li>
+                <li class="company__list-item">ЖелдорЭкспедиция</li>
+            </ul>
+        </div>
+        <div class="company__list-more colored-button">
+            <a href="">
                     <span class="colored-button__text">
                         Подробнее о нас
                     </span>
-                </a>
-            </div>
-        </section>
-        <section class="company__contact">
-            <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис.
-                Заодно, вы сможете проверить работоспособность покупки.
-                Всякое бывает.</p>
-            <a href="">
-                <img class="company__contact-map" src="images/map/map.jpg" width="560" height="223" alt="Карта">
             </a>
-            <div class="company__list-more colored-button">
-                <a href="">
+        </div>
+    </section>
+    <section class="company__contact">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис.
+            Заодно, вы сможете проверить работоспособность покупки.
+            Всякое бывает.</p>
+        <a href="https://goo.gl/maps/HKgysi2yRVL2" target="_blank">
+            <img class="company__contact-map" src="images/map/map.jpg" width="560" height="223" alt="Карта">
+        </a>
+        <div class="company__list-more colored-button">
+            <a href="#openModal">
                     <span class="colored-button__text">
                         Напишите нам
                     </span>
-                </a>
-            </div>
-        </section>
+            </a>
+        </div>
+    </section>
 </div>
 <footer class="footer ">
     <div class="container">
@@ -368,13 +389,13 @@
                 <p>г. Москва, ул. Строителей, 15</p>
             </div>
             <ul class="footer__middle-nav">
-                <li>
+                <li class="footer__middle-var">
                     <a href="">Доставка</a>
                 </li>
-                <li>
+                <li class="footer__middle-var">
                     <a href="">Гарантия</a>
                 </li>
-                <li>
+                <li class="footer__middle-var">
                     <a href="">Контакты</a>
                 </li>
             </ul>
@@ -405,33 +426,40 @@
         </div>
     </div>
 </footer>
+<div id="openModal" class="modal__dialog">
+    <form class="modal__form" method="post">
+        <a class="modal__form-close" href="#x">
 
-<div class="modal" style="display: none;">
-    <form class="modal__form" action="" method="post">
-        <div class="modal__form-close">
-            <input type="submit">
+        </a>
+
+        <div class="modal__form-top">
+            <div class="modal__form-left">
+                <label for="name">Ваше имя:</label>
+                <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="modal__form-right">
+                <label for="mail">Ваш e-mail:</label>
+                <input id="mail" type="text" name="mail" placeholder="Для отправки ответа">
+            </div>
         </div>
-        <div class="modal__form-left">
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" value="Представьтесь, пожалуйста">
-        </div>
-        <div class="modal__form-right">
-            <label for="mail">Ваш e-mail:</label>
-            <input id="mail" type="text" name="mail" value="Для отправки ответа">
-        </div>
+
         <div class="modal__form-bottom">
             <label for="letter">Текст письма:</label>
             <textarea id="letter" rows="10" cols="45" name="text">В свободной форме</textarea>
         </div>
 
-        <p>
-            <input type="submit" value="Отправить">
-        </p>
+        <button class="catalog__button colored-button modal__form-button" type="submit">
+            <span class="colored-button__text">Отправить</span>
+        </button>
     </form>
 </div>
-<div class="modal" style="display: none;">
-    <input class="modal-close" type="submit">
-    <img src="images/map/map-big.jpg" alt="Карта">
-</div>
+
+<!--<div class="test">-->
+<!--<input class="test__input" type="checkbox" id="checkbox1">-->
+<!--<label class="test__label" for="checkbox1">-->
+<!--test-->
+<!--</label>-->
+<!--</div>-->
+
 </body>
 </html>
