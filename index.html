@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -71,7 +72,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="header__menu">
                     <div class="header__menu-left">
@@ -91,16 +91,16 @@
     <div class="container">
         <ul class="slider__circles">
             <li class="slider__circles-circle">
+                <input name="slide" id="slide1" type="radio">
                 <label for="slide1"></label>
-                <input id="slide1" type="radio">
             </li>
             <li class="slider__circles-circle">
+                <input name="slide" id="slide2" type="radio">
                 <label for="slide2"></label>
-                <input id="slide2" type="radio">
             </li>
             <li class="slider__circles-circle">
+                <input name="slide" id="slide3" type="radio">
                 <label for="slide3"></label>
-                <input id="slide3" type="radio">
             </li>
         </ul>
         <div class="slider__slide">
@@ -246,56 +246,56 @@
                         Доставка
                     </span>
                 </label>
-                <section class=" about__tab-content about__servise-content">
-                    <div class="about__servise-content-img">
-                        <img src="images/services/delivery.png" width="136" height="164" alt="delivery">
-                    </div>
-                    <div class="about__servise-content-info">
-                        <h2>Доставка</h2>
-                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                    </div>
-                </section>
             </li>
             <li class="about__tab">
-                <input name="tab" type="radio" id="tab2">
-                <label for="tab2" class="about__titles-item  colored-button">
+                <label class="about__titles-item  colored-button">
                     <span class="colored-button__text">
                         Гарантия
                     </span>
                 </label>
-                <section class="about__tab-content about__servise-content">
-                    <div class="about__servise-content-img">
-                        <img src="images/services/warranty.png" width="171" height="195" alt="delivery">
-                    </div>
-                    <div class="about__servise-content-info">
-                        <h2>Гарантия</h2>
-                        <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте,
-                            мы выдадим вам новый.Товар, не дом, конечно же.</p>
-                    </div>
-
-                </section>
             </li>
             <li class="about__tab">
-                <input name="tab" type="radio" id="tab3">
-                <label class="about__titles-item  colored-button" for="tab3">
+                <label class="about__titles-item  colored-button" >
                     <span class="colored-button__text">
                         Кредит
                     </span>
                 </label>
-                <section class="about__tab-content about__servise-content">
-                    <div class="about__servise-content-img">
-                        <img src="images/services/credit.png" width="156" height="188" alt="delivery">
-                    </div>
-                    <div class="about__servise-content-info">
-                        <h2>Кредит</h2>
-                        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
-                            для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                    </div>
-
-                </section>
             </li>
         </ul>
+        <div class="about__content">
+            <section class=" about__tab-content about__servise-content">
+                <div class="about__servise-content-img">
+                    <img src="images/services/delivery.png" width="136" height="164" alt="delivery">
+                </div>
+                <div class="about__servise-content-info">
+                    <h2>Доставка</h2>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                        Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+            </section>
+            <section class="about__tab-content--none about__servise-content">
+                <div class="about__servise-content-img">
+                    <img src="images/services/warranty.png" width="171" height="195" alt="delivery">
+                </div>
+                <div class="about__servise-content-info">
+                    <h2>Гарантия</h2>
+                    <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте,
+                        мы выдадим вам новый.Товар, не дом, конечно же.</p>
+                </div>
+
+            </section>
+            <section class="about__tab-content--none about__servise-content">
+                <div class="about__servise-content-img">
+                    <img src="images/services/credit.png" width="156" height="188" alt="delivery">
+                </div>
+                <div class="about__servise-content-info">
+                    <h2>Кредит</h2>
+                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
+                        для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+
+            </section>
+        </div>
     </div>
 </div>
 <ul class="brand container clearfix">
@@ -409,18 +409,18 @@
             </div>
             <div class="footer__bottom-social">
                 <a class="footer__bottom-social-icon" href="">
-                    <img src="images/social/facebook.png" width="20" height="20" alt="фейсбук">
+                    <img src="images/social/facebook.png" width="20" height="20" title="Facebook" alt="фейсбук">
                 </a>
                 <a class="footer__bottom-social-icon" href="">
-                    <img src="images/social/insta.png" width="20" height="20" alt="интаграмм">
+                    <img src="images/social/insta.png" width="20" height="20" title="Instagram" alt="инcтаграмм">
                 </a>
                 <a class="footer__bottom-social-icon" href="">
-                    <img src="images/social/twitter.png" width="20" height="20" alt="твитер">
+                    <img src="images/social/twitter.png" width="20" height="20" title="Twitter" alt="твитер">
                 </a>
             </div>
             <div class="footer__bottom-html">
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="images/social/htmlacademy.png" width="20" height="20" alt="logo">
+                    <img src="images/social/htmlacademy.png" width="20" title="HTML Academy" height="20" alt="logo">
                 </a>
             </div>
         </div>
@@ -445,7 +445,7 @@
 
         <div class="modal__form-bottom">
             <label for="letter">Текст письма:</label>
-            <textarea id="letter" rows="10" cols="45" name="text">В свободной форме</textarea>
+            <textarea placeholder="В свободной форме" id="letter" rows="10" cols="45" name="text"></textarea>
         </div>
 
         <button class="catalog__button colored-button modal__form-button" type="submit">

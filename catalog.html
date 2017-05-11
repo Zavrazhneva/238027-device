@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link href=" css/normalize.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -92,7 +93,7 @@
     <div class="container">
         <div class="title__top">
             <h1>Моноподы для селфи</h1>
-            <div class="title__breadcrumbs">
+            <div class="breadcrumbs">
                 <ul class="title__breadcrumbs-list">
                     <li class="title__breadcrumbs-item">
                         <a href="">Главная ></a>
@@ -171,7 +172,7 @@
             </div>
             <div class="catalog__products">
                 <div class="catalog__sorting">
-                    <span>Сортировка:</span>
+                    <span class="catalog__sorting-title">Сортировка:</span>
                     <ul>
                         <li class="catalog__sorting-nav">
                             <a href="">По цене</a>
@@ -185,16 +186,16 @@
                     </ul>
                     <div class="catalog__sort">
                         <a href="">
-                            <span class="catalog__sort-up"></span>
+                            <span title="Сортировка по возрастанию" class="catalog__sort-up"></span>
                         </a>
                         <a href="">
-                            <span class="catalog__sort-asc"></span>
+                            <span title="Сортировка по убыванию" class="catalog__sort-asc"></span>
                         </a>
                     </div>
 
                 </div>
                 <div class="catalog__products-product">
-                    <article class="goods-card">
+                    <article class="goods-card goods-card--new">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-1.jpg" width="360" height="380"
                                  alt="Товар">
@@ -219,7 +220,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="goods-card ">
+                    <article class="goods-card goods-card--new ">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-2.jpg" width="360" height="380"
                                  alt="Товар">
@@ -246,7 +247,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="goods-card ">
+                    <article class="goods-card goods-card--new">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-3.jpg" width="360" height="380"
                                  alt="Товар">
@@ -271,7 +272,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="goods-card ">
+                    <article class="goods-card goods-card--new">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-4.jpg" width="360" height="380"
                                  alt="Товар">
@@ -358,18 +359,18 @@
             </div>
             <div class="footer__bottom-social">
                 <a class="footer__bottom-social-icon" href="">
-                    <img src="images/social/facebook.png" width="20" height="20" alt="фейсбук">
+                    <img src="images/social/facebook.png" width="20" height="20" title="Facebook" alt="фейсбук">
                 </a>
                 <a class="footer__bottom-social-icon" href="">
-                    <img src="images/social/insta.png" width="20" height="20" alt="интаграмм">
+                    <img src="images/social/insta.png" width="20" height="20" title="Instagram" alt="инcтаграмм">
                 </a>
                 <a class="footer__bottom-social-icon" href="">
-                    <img src="images/social/twitter.png" width="20" height="20" alt="твитер">
+                    <img src="images/social/twitter.png" width="20" height="20" title="Twitter" alt="твитер">
                 </a>
             </div>
             <div class="footer__bottom-html">
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="images/social/htmlacademy.png" width="20" height="20" alt="logo">
+                    <img src="images/social/htmlacademy.png" width="20" height="20" title="HTML Academy" alt="HtmlAcademy">
                 </a>
             </div>
         </div>
