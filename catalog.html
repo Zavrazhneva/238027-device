@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link href=" css/normalize.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -123,6 +123,12 @@
                         <legend>Стоимость</legend>
                         <div class="input-range">
                             <input type="range" name="price">
+                            <div class="input-range__input">
+                                <div class="input-range__input-base"></div>
+                                <div class="input-range__input-selected"></div>
+                                <div class="input-range__dot"></div>
+                                <div class="input-range__dot input-range__dot--second"></div>
+                            </div>
                             <div class="input-range__vars">
                                 <span class="input-range__vars-item">от 0 </span>
                                 <span class="input-range__vars-item">до 5 000</span>
@@ -131,23 +137,23 @@
                     </fieldset>
                     <fieldset class="catalog__fieldset">
                         <legend>Цвет</legend>
-                        <div class="catalog__checkbox">
+                        <div class="checkbox catalog__checkbox">
                             <input id="black" type="checkbox" name="black" checked="">
                             <label for="black">Черный</label>
                         </div>
-                        <div class="catalog__checkbox">
+                        <div class="checkbox catalog__checkbox">
                             <input id="white" type="checkbox" name="white">
                             <label for="white">Белый</label>
                         </div>
-                        <div class="catalog__checkbox">
+                        <div class="checkbox catalog__checkbox">
                             <input id="blue" type="checkbox" name="blue" checked="">
                             <label for="blue">Синий</label>
                         </div>
-                        <div class="catalog__checkbox">
+                        <div class="checkbox catalog__checkbox">
                             <input id="red" type="checkbox" name="red" checked="">
                             <label for="red">Красный</label>
                         </div>
-                        <div class="catalog__checkbox">
+                        <div class="checkbox catalog__checkbox">
                             <input id="pink" type="checkbox" name="pink">
                             <label for="pink">Розовый</label>
                         </div>
@@ -155,11 +161,11 @@
                     </fieldset>
                     <fieldset class="catalog__fieldset">
                         <legend>Bluetooth</legend>
-                        <div>
+                        <div class="radiobutton">
                             <input id="yes" type="radio" value="1" name="bluetooth">
                             <label for="yes">Есть</label>
                         </div>
-                        <div>
+                        <div class="radiobutton">
                             <input id="no" type="radio" value="0" name="bluetooth">
                             <label for="no">Нет</label>
                         </div>
@@ -195,7 +201,7 @@
 
                 </div>
                 <div class="catalog__products-product">
-                    <article class="goods-card goods-card--new">
+                    <article class="goods-card">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-1.jpg" width="360" height="380"
                                  alt="Товар">
@@ -204,7 +210,7 @@
                         </div>
                         <div class="goods-card__description">
                             <a href="" class="goods-card__title">
-                                Любительская селфи-палка
+                                Любительская <nobr>селфи-палка</nobr>
                             </a>
                             <span class="goods-card__price">500 руб.</span>
                         </div>
@@ -220,7 +226,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="goods-card goods-card--new ">
+                    <article class="goods-card">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-2.jpg" width="360" height="380"
                                  alt="Товар">
@@ -229,8 +235,8 @@
                         </div>
                         <div class="goods-card__description">
                             <a href="" class="goods-card__title">
-                                Профессиональная <br>
-                                селфи-палка
+                                Профессиональная
+                                <nobr>селфи-палка</nobr>
                             </a>
                             <span class="goods-card__price">1 500 руб.</span>
                         </div>
@@ -247,7 +253,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="goods-card goods-card--new">
+                    <article class="goods-card">
                         <div class="goods-card__main-img-wrapper">
                             <img class="goods-card__main-img" src="images/catalog/item-3.jpg" width="360" height="380"
                                  alt="Товар">
@@ -256,7 +262,7 @@
                         </div>
                         <div class="goods-card__description">
                             <a href="" class="goods-card__title">
-                                Непотопляемая селфи-палка
+                                Непотопляемая <nobr>селфи-палка</nobr>
                             </a>
                             <span class="goods-card__price">2 500 руб.</span>
                         </div>
@@ -281,7 +287,7 @@
                         </div>
                         <div class="goods-card__description">
                             <a href="" class="goods-card__title">
-                                Селфи-палка "Следуй за мной"
+                                <nobr>Селфи-палка</nobr> <nobr>"Следуй за мной"</nobr>
                             </a>
                             <span class="goods-card__price">4 900 руб.</span>
                         </div>
@@ -299,22 +305,17 @@
                     </article>
                 </div>
                 <div class="pagination">
-                    <div class="pagination__backward">
-                        <a href="">Назад</a>
-                    </div>
+                    <a class="pagination__backward" href="">Назад</a>
                     <ul class="pagination__list">
                         <li class="pagination__list-item pagination__list-item--active"><a href="">1</a></li>
                         <li class="pagination__list-item"><a href="">2</a></li>
                         <li class="pagination__list-item"><a href="">3</a></li>
                     </ul>
-                    <div class="pagination__forward">
-                        <a href="">Вперед</a>
-                    </div>
+                    <a class="pagination__forward" href="">Вперед</a>
                 </div>
             </div>
         </div>
     </div>
-
 </main>
 <footer class="footer ">
     <div class="container">
