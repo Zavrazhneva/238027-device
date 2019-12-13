@@ -5,9 +5,9 @@ var dots = document.querySelectorAll('.slider__circles-circle');
 for(let i = 0; i < dots.length; i++) {
     dots[i].addEventListener('click',clickHandler);
 }
+var sliders = document.getElementsByClassName('slider__slide'); 
 
 function clickHandler(e) {
-    var sliders = document.getElementsByClassName('slider__slide');
     for(let i = 0; i < sliders.length; i++) {
         sliders[i].style.display="none";
         var idDot = e.target.id;
